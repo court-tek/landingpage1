@@ -1,0 +1,58 @@
+/* header */
+header {
+    background-color: hsl(203, 17%, 25%);
+    color: hsl(180, 100%, 100%);
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__branding img {
+    aspect-ratio: 1 / 1;
+    width: 30%;
+    object-fit: contain;
+}
+
+.header__navi {
+    display: none;
+    white-space: nowrap;   
+}
+
+.header__hamburger {
+    display: block;
+}
+
+header li {
+    margin-left: 20px;
+    display: inline-block; 
+}
+
+header a {
+    color: hsl(180, 100%, 100%);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px; 
+}
+
+@media (min-width: 640px) {
+    
+}
+
+@media (min-width: 768px) {
+    .header__hamburger {
+        display: none;
+    }
+
+    .header__navi {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
