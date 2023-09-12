@@ -1,3 +1,4 @@
+/* This applies from 0px to 600px */
 #newsletter {
     padding: 15px;
     background: #35424a;
@@ -19,18 +20,53 @@
     margin-bottom: 20px;
 }
 
+.newsletter__form-group {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
 .newsletter__form-group input[type="email"] {
-    padding: 4px;
+    padding: 20px;
     height: 25px;
-    max-width: 250px;
-    width: 75%;
+    width: 100%;
 }
 
 .newsletter__btn {
     border-radius: 0;
+    padding: .5em 1em;
 }
+
+/* This applies from 600px onwards */
 @media (min-width: 768px) {
-  .newsletter__container {
-    flex-direction: row;
-  }
+    .newsletter__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .newsletter__heading {
+        font-size: 1.1rem;
+        font-size: clamp(1.1rem, 0.86rem + 2.2vw, 1.5rem);
+        font-weight: 600;
+        text-transform: capitalize;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .newsletter__form-group {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .newsletter__form-group input[type="email"] {
+        padding: 25px;
+        height: 28px;
+        width: 250px;
+    }
+
+    .newsletter__btn {
+        border-radius: 0;
+        padding: .3em 2em;
+    }
 }

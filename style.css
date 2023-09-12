@@ -3,6 +3,7 @@
 @import url('./assets/css/hero.css');
 @import url('./assets/css/newsletter.css');
 @import url('./assets/css/boxes.css');
+@import url('./assets/css/footer.css');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -19,6 +20,8 @@
   -webkit-text-size-adjust: 100%;
   --clr-trblue: hsl(203, 100%, 50%);
   --clr-trpink: hsl(310, 95%, 75%);
+  --clr-ftrBg: hsl(240, 8%, 15%);
+  --clr-sbftrBg: hsl(240, 7%, 8%);
 }
 
 /* global do */
@@ -69,7 +72,6 @@
   cursor: pointer;
   line-height: 1.5;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
-  padding: 1em 2em;
   letter-spacing: 0.05rem;
   border-radius: none;
 }

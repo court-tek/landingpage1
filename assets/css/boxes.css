@@ -2,6 +2,8 @@
 #boxes {
     margin-top: 28px;
     color: hsl(0, 0%, 0%);
+    /* height: 50vh; */
+    padding: 20px;
 }
 
 .boxes__container {
