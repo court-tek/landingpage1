@@ -1,0 +1,44 @@
+/* This applies from 0px to 600px */
+#boxes {
+    margin-top: 28px;
+    color: hsl(0, 0%, 0%);
+}
+
+.boxes__container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: row;
+}
+
+.boxes__box {
+    display: grid;
+    grid-auto-flow: row;
+    gap: .8rem;
+    background-color: var(--clr-trblue);
+}
+
+.boxes__box svg {
+    width: 50%;
+    margin: 0 auto;
+    color: hsl(0, 0%, 0%);    
+}
+
+.boxes__heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.boxes__subheading {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* This applies from 600px onwards */
+@media (min-width: 640px) {}
+@media (min-width: 768px) {
+    .boxes__container {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}
